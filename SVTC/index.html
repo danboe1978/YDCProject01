@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVTC Education Assistance Programme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>SVTC Education Assistance Programme</h1>
+    <form action="YOUR_SERVER_ENDPOINT" method="post" enctype="multipart/form-data">
+        <form id="submitForm" action="https://script.google.com/macros/s/AKfycbxBHgaY_ZDoGlQiunhdNLTvEwyN5s9t2lzXTEwj4UYpD2WHv4ePlCywbLRogx7j2jt9/exec" method="post"></form>
+
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required><br><br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="nextOfKin">Next of Kin Full Names:</label>
+            <input type="text" id="nextOfKin" name="nextOfKin" required><br><br>
+
+            <label>Are you fully registered?</label><br>
+            <input type="radio" id="registeredYes" name="registered" value="yes" required>
+            <label for="registeredYes">Yes</label><br>
+            <input type="radio" id="registeredNo" name="registered" value="no" required>
+            <label for="registeredNo">No</label><br><br>
+
+            <label for="internetAccess">Do you have favorable internet network access in your area?</label><br>
+            <textarea id="internetAccess" name="internetAccess" required></textarea><br><br>
+
+            <label for="presidentName">Name of President of Village Women's Club:</label>
+            <input type="text" id="presidentName" name="presidentName" required><br><br>
+
+            <label>Indicate if you are an SVTC member or child of an SVTC member:</label><br>
+            <input type="checkbox" id="svtcMember" name="svtcStatus" value="SVTC member">
+            <label for="svtcMember">SVTC member</label><br>
+            <input type="checkbox" id="svtcChild" name="svtcStatus" value="Child of an SVTC member">
+            <label for="svtcChild">Child of an SVTC member</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Educational Plans</legend>
+            <label for="institutionName">Name of Tertiary Institution:</label>
+            <input type="text" id="institutionName" name="institutionName" required><br><br>
+
+            <label for="programmeEnrolled">Programme Enrolled:</label>
+            <input type="text" id="programmeEnrolled" name="programmeEnrolled" required><br><br>
+            <label for="programmeDocument">Upload Document:</label>
+            <input type="file" id="programmeDocument" name="programmeDocument" required><br><br>
+
+            <label>Select which mode of study you are currently enrolled in:</label><br>
+            <input type="radio" id="faceToFace" name="studyMode" value="Face to face" required>
+            <label for="faceToFace">Face to face</label><br>
+            <input type="radio" id="online" name="studyMode" value="Online" required>
+            <label for="online">Online</label><br><br>
+
+            <label for="coursesCompleted">If currently enrolled, list the courses completed and results:</label><br>
+            <textarea id="coursesCompleted" name="coursesCompleted" required></textarea><br><br>
+            <label for="coursesDocument">Upload Support Documents:</label>
+            <input type="file" id="coursesDocument" name="coursesDocument" required><br><br>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
